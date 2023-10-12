@@ -4,15 +4,43 @@ body, html {
   font-family: 'Arial', sans-serif;
   background-color: #1d1c1c;
   color: whitesmoke;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../src/assets/img/back.webp");
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
 }
 
 .centered-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 0px 0px 0px;
+  padding: 100px 100px 100px 100px !important;
 }
 
 .green {
   color: #3ecfb2;
+}
+
+/* Stile per il contenitore */
+.container {
+  width: 100%;        
+  max-width: 1200px;
+  margin: 0 auto;         
+  padding: 0 15px;       
+}
+
+/* Stile per la riga */
+.row {
+  display: flex;       
+  flex-wrap: wrap;        
+  margin-left: -15px;   
+  margin-right: -15px;
+}
+
+/* Stile per la colonna */
+.col {
+  flex: 1;
+  padding: 0 15px;
 }

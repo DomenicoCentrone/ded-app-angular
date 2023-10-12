@@ -1,0 +1,51 @@
+/* Stili base per il form */
+form {
+    background-color: #292929;  /* sfondo del form */
+    padding: 20px;            
+    border-radius: 5px;       
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    width: 300px;      /* ho aumentato la larghezza dato che ci saranno più campi */
+    max-width: 90%;    /* opzionale, per assicurarsi che il form non diventi troppo grande su schermi piccoli */
+}
+
+/* Spazio tra gli input, il pulsante e altre etichette */
+form input,
+form button,
+form textarea,
+form label {         /* ho aggiunto label nel caso tu voglia usare delle etichette per i campi */
+    margin-bottom: 10px; /* ho aumentato lo spazio per una migliore leggibilità */
+}
+
+/* Stili per gli input */
+form input,
+form textarea {
+    color: whitesmoke;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; 
+    border: 1px solid #2e2e2e;
+    border-radius: 4px;
+    background-color: #232323;
+}
+
+form textarea {
+    resize: vertical; /* permette all'utente di ridimensionare la textarea solo verticalmente */
+}
+
+/* Stile per il pulsante */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #349a6b; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #3fd18f; 
+}

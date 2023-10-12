@@ -1,0 +1,80 @@
+<h2>Aggiungi un Personaggio</h2>
+
+<form (submit)="onUpdateProfile()">
+  <div>
+    <input
+      placeholder="Nome PG"
+      type="text"
+      [(ngModel)]="nomePG"
+      name="nomePG"
+    />
+  </div>
+
+  <div>
+    <select [(ngModel)]="razza" name="razza">
+      <option value="" disabled selected>Scegli una razza</option>
+      <option value="Umano">Umano</option>
+      <option value="Elfo">Elfo</option>
+      <option value="Nano">Nano</option>
+      <option value="Halfling">Halfling</option>
+      <option value="Draconide">Draconide</option>
+      <option value="Gnomo">Gnomo</option>
+      <option value="Mezzorco">Mezzorco</option>
+      <option value="Tiefling">Tiefling</option>
+    </select>
+  </div>
+
+  <div>
+    <select [(ngModel)]="classe" name="classe">
+      <option value="" disabled selected>Scegli una classe</option>
+      <option value="Barbaro">Barbaro</option>
+      <option value="Bardo">Bardo</option>
+      <option value="Chierico">Chierico</option>
+      <option value="Druido">Druido</option>
+      <option value="Guerriero">Guerriero</option>
+      <option value="Ladro">Ladro</option>
+      <option value="Mago">Mago</option>
+      <option value="Monaco">Monaco</option>
+      <option value="Paladino">Paladino</option>
+      <option value="Ranger">Ranger</option>
+      <option value="Stregone">Stregone</option>
+      <option value="Warlock">Warlock</option>
+    </select>
+  </div>
+
+  <div>
+    <select [(ngModel)]="allineamento" name="allineamento">
+      <option value="" disabled selected>Scegli un allineamento</option>
+      <option value="LegaleBuono">Legale Buono</option>
+      <option value="Neutrale Buono">Neutrale Buono</option>
+      <option value="Caotico Buono">Caotico Buono</option>
+      <option value="Legale Neutrale">Legale Neutrale</option>
+      <option value="Neutrale">Neutrale</option>
+      <option value="Caotico Neutrale">Caotico Neutrale</option>
+      <option value="Legale Malvagio">Legale Malvagio</option>
+      <option value="Neutrale Malvagio">Neutrale Malvagio</option>
+      <option value="Caotico Malvagio">Caotico Malvagio</option>
+    </select>
+  </div>
+
+  <div>
+    <input
+      placeholder="Carattere"
+      type="text"
+      [(ngModel)]="carattere"
+      name="carattere"
+    />
+  </div>
+
+  <div>
+    <textarea
+      placeholder="Storia"
+      [(ngModel)]="storia"
+      name="storia"
+    ></textarea>
+  </div>
+
+  <div>
+    <button type="submit">Aggiungi Personaggio</button>
+  </div>
+</form>

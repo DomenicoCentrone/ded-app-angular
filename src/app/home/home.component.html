@@ -1,0 +1,22 @@
+<div *ngIf="user$ | async as user; else notLoggedIn">
+  <h2>Benvenuto, {{ user.email || "utente" }}</h2>
+
+  <h3>I tuoi personaggi:</h3>
+  <ul *ngIf="characters$ | async as characters; else noCharacters">
+    <li *ngFor="let character of characters">
+      <a [routerLink]="['/character', character.nomePG]">
+        {{ character.nomePG }} | {{ character.razza }} | {{ character.classe }}
+      </a>
+    </li>
+  </ul>
+  <button (click)="navigateToUpdateProfile()">Aggiungi Personaggio</button>
+</div>
+
+<ng-template #noCharacters>
+  <p>Non hai ancora personaggi registrati.</p>
+</ng-template>
+
+<ng-template #notLoggedIn>
+  <h2>Loggati se non l'hai ancora fatto.</h2>
+  <button (click)="navigateToLogin()">Login</button>
+</ng-template>

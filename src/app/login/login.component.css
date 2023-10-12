@@ -1,0 +1,44 @@
+/* Stili base per il form */
+form {
+    background-color: #292929;  /* sfondo bianco per il form */
+    padding: 20px;            /* padding interno */
+    border-radius: 5px;       /* angoli leggermente arrotondati */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* leggera ombra per dare profondità */
+    width: 300px;      /* larghezza fissa, ma puoi modificarla come preferisci */
+  }
+  
+  /* Spazio tra gli input e il pulsante */
+  form input,
+  form button {
+    margin-bottom: 10px; /* spazio sotto ogni elemento */
+  }
+  
+  /* Stili per gli input */
+  form input {
+    color: whitesmoke;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* per assicurarsi che il padding non influisca sulla larghezza totale */
+    border: 1px solid #2e2e2e;
+    border-radius: 4px;
+    background-color: #232323;
+  }
+  
+  /* Stile per il pulsante */
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #349a6b; /* colore blu come esempio */
+    color: whitesmoke;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #3fd18f; /* un blu più scuro al passaggio del mouse */
+  }
+  
